@@ -5,6 +5,9 @@ sudo useradd -m MrH3r0
 sudo adduser MrH3r0 sudo
 echo 'MrH3r0:8426' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+sudo apt-get install -y yakuake
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/yakuake 0
+sudo update-alternatives --set x-terminal-emulator /usr/bin/yakuake
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update; \
