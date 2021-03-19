@@ -43,8 +43,5 @@ then
 else
     printf "\n\nError Occured " >&2
 fi
-while true
-do
-	echo "Do something; hit [CTRL+C] to stop!"
-done
+
 
